@@ -1,0 +1,247 @@
+@media screen  and (max-width:1784px){
+    #candle,#frame,#jug{
+        display: none;
+    }
+}
+@media screen  and (max-width:1560px)
+{
+    #blog6,#blog7{display: none !important;}
+    #catclock{ display: none !important;}
+}
+@media screen and (min-width: 1127px) and (max-width:1340px)
+{
+    #blog-chair{
+    display: none !important;
+}
+#blog-picture{
+    display: none !important;
+}
+#blog-glass{
+    display: none !important;
+}
+}
+@media screen and (min-width: 991px) and (max-width:1300px)
+ {
+    .blog-overall img {
+        height: 200px !important;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:990px) {
+    .container3 {
+        flex-direction: column;
+    }
+
+    .img img {
+        height: 200% !important;
+        width: 96%;
+    }
+
+    /* .container5{
+        flex-wrap: wrap;
+       } */
+    /* .footer {
+            flex-wrap: wrap;
+            gap: 20px;
+        } */
+    .container5 {
+        flex-wrap: wrap;
+    }
+
+    .blog-overall img {
+        height: 200px;
+        width: 217px;
+    }
+
+    .blog-content-1 p {
+        width: 269px;
+    }
+
+    .blog-content-1 {
+        text-align: center;
+    }
+
+    .blog-overall img {
+        height: 206px;
+        width: 269px;
+    }
+
+    .scthed1 {
+        font-size: 29px !important;
+    }
+
+    .sctpar1 {
+        font-size: 14px !important;
+    }
+
+    input {
+        height: 30px;
+        width: 110%;
+    }
+
+    .blog {
+        flex-wrap: wrap;
+    }
+
+    .backimg-content h1 {
+        color: white;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:600px) {
+    .sct2image {
+        flex-direction: column;
+    }
+
+    .flip-body {
+        gap: 82px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 73px 0px;
+    }
+
+    /* .container3{
+        flex-direction: column !important;
+    } */
+
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .sct2image img {
+        /* margin: 10px; */
+        height: 300% !important;
+        width: 99% !important;
+    }
+
+    .container5 {
+        flex-direction: column;
+    }
+
+    .container7 {
+        flex-direction: column;
+    }
+
+    /* *
+{
+    border: 2px solid red;
+} */
+    .footer {
+        flex-direction: column;
+    }
+
+    .granti {
+        flex-wrap: wrap;
+    }
+
+    .bestseller {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .backimg-content h1 {
+        font-size: 38px !important;
+    }
+
+    .offer-box img {
+        height: 83% !important;
+        width: 100% !important;
+    }
+
+    .container3 {
+        flex-direction: column;
+    }
+
+    .container5 {
+        flex-direction: column;
+    }
+
+    .container5 img {
+
+        height: 200px;
+        width: 234px;
+
+    }
+
+    .indexbg-content-head {
+        font-size: 34px;
+        width: 50%;
+    }
+
+    .blog {
+        flex-direction: column !important;
+    }
+
+    .indexbg-content-para {
+        width: 100% !important;
+    }
+
+    .indexbg-content-head {
+        font-size: 33px !important;
+        width: 100% !important;
+    }
+
+    .offer-box-content h1 {
+        font-size: 23px !important;
+    }
+
+    .blog-overall img {
+        height: 200px !important;
+    }
+
+    .img {
+        padding-top: 10Px !important;
+    }
+    .navup2{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slide1-item {
+        flex: 0 0 20%;
+        / Show 5 items /
+    }
+}
+
+@media (max-width: 992px) {
+    .slide1-item {
+        flex: 0 0 25%;
+        / Show 4 items /
+    }
+}
+
+@media (max-width: 768px) {
+    .slide1-item {
+        flex: 0 0 33.33%;
+        / Show 3 items /
+    }
+}
+
+@media (max-width: 576px) {
+    .slide1-item {
+        flex: 0 0 50%;
+        / Show 2 items /
+    }
+}
+
+@media (max-width: 400px) {
+    .slide1-item {
+        flex: 0 0 100%;
+        / Show 1 item /
+    }
+}
+
+.container5 {
+    flex-direction: column;
+}
+
+.container5 img {
+
+    height: 200px;
+    width: 234px;
+
+}

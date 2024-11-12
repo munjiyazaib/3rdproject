@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .slider{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ img{
+  width: auto;
+  height: 600px;
+  /* object-fit: cover; */
+ }
+ .slider-images{
+  display: flex;
+  width: calc(100px * 18);
+  animation: slide 5s  infinite;
+ }
+ @keyframes slide {
+  0%{
+    transform: translateX(0);
+  }
+  0%{
+    transform: translateX(calc(100px));
+  }
+ }
+
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');  
+ /*-- VARIABLES CSS--*/  
+ /*Colores*/  
+ :root{  
+   --first-color: #E3F8FF;  
+   --second-color: #DCFAFB;  
+   --third-color: #FFE8DF;  
+   --accent-color: #FF5151;  
+   --dark-color: #161616;  
+ }  
+ .main{  
+   margin-top: 10%;  
+ }  
+ /*-- COMPONENT --*/  
+ .card{  
+   position: relative;  
+   display: flex;  
+   flex-direction: column;  
+   align-items: center;  
+   padding: 1.3rem 2rem;  
+   border-radius: 1rem;  
+   overflow: hidden;  
+ }  
+ article:nth-child(1){  
+   background-color: var(--first-color);  
+ }  
+ article:nth-child(2){  
+   background-color: var(--second-color);  
+ }  
+ article:nth-child(3){  
+   background-color: var(--third-color);  
+ }  
+ article:nth-child(4){  
+   background-color: var(--second-color);  
+ }  
+ .card__img{  
+   width: 180px;  
+   height: auto;  
+   padding: 3rem 0;  
+   transition: .5s;  
+ }   
+ .card__img{  
+   width: 180px;  
+   height: auto;  
+   padding: 3rem 0;  
+   transition: .5s;  
+ }   
+
+ .card__name{  
+   position: absolute;  
+   left: -25%;  
+   top: 0;  
+   width: 3.5rem;  
+   height: 100%;  
+   writing-mode: vertical-rl;  
+   transform: rotate(180deg);  
+   text-align: center;  
+   background-color: var(--dark-color);  
+   color: #fff;  
+   font-weight: bold;  
+   transition: .5s;  
+ }  
+ .card__icon{  
+   font-size: 1.5rem;  
+   color: var(--dark-color);  
+ }  
+ .card__icon:hover{  
+   color: var(--accent-color);  
+ }  
+ .card__precis{  
+   width: 100%;  
+   display: flex;  
+   justify-content: space-between;  
+   align-items: flex-end;  
+   transition: .5s;  
+ }  
+ .card__preci{  
+   display: block;  
+   text-align: center;  
+ }  
+ .card__preci--before{  
+   font-size: var(--smaller-font-size);  
+   color: var(--accent-color);  
+   margin-bottom: .25rem;  
+ }  
+ .card__preci--now{  
+   font-size: var(--h3-font-size);  
+   font-weight: bold;  
+ }  
+ /*Move left*/  
+ .card:hover{  
+   box-shadow: 0 .5rem 1rem #D1D9E6;  
+ }  
+ .card:hover .card__name{  
+   left: 0;  
+ }  
+ /* .card:hover .card__img{  
+   transform: rotate(30deg);  
+   margin-left: 3.5rem;  
+ }   */
+ .card:hover .card__precis{  
+   margin-left: 3.5rem;  
+   padding: 0 1.5rem;  
+ }  
+ /*-- MEDIA QUERIES --*/  
+ /* @media screen and (min-width: 1200px){  
+   body{  
+     margin: 3rem 0 0 0;  
+   }  
+   .title-shop{  
+     margin: 0 5rem;  
+   }  
+   .bd-grid{  
+     margin-left: auto;  
+     margin-right: auto;  
+   }  
+ } */  
+ /* <script> $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:true,
+    items: 4,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{ items:1 },
+        574:{ items:2 },
+        600:{ items:2 },
+        800:{ items:3 },
+        1000:{ items:4 }, } })
+        </script>  */
+        /* Owl Carousel Buttons Design */
+.owl-carousel .owl-nav button.owl-prev {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position: absolute;
+  top: 35%;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  font-size: 3rem !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position: absolute;
+  right: 0px;
+  top: 35%;
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+  font-size: 3rem !important;
+}
+transform: translate3d(-1348px, 0px, 0px);
+    transition: 0.25s;
+    width: 4718px;
+}
+
+
+</style>
+<body>
+   <!-- slider image -->
+   <div class="slider">
+    <div class="slider-images">
+        <img src="image/nslide1.webp"
+            alt="Image 1" class="slide">
+        <img src="image/nslide2.webp"
+            alt="Image 2" class="slide">
+            <img src="image/nslide3.webp"
+            alt="Image 1" class="slide">
+         
+
+    </div>
+
+</div>
+
+<section class="">
+
+<main class="main bd-grid owl-carousel">  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img1.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img2.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img3.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img4.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img3.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <article class="card">  
+    <div class="card__img">  
+      <img src="assets/img/img4.png" alt="">  
+    </div>  
+    <div class="card__name">  
+      <p>AIR ZOOM PEGASUS</p>  
+    </div>  
+    <div class="card__precis">  
+      <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>  
+      <div>  
+        <span class="card__preci card__preci--before">$990.00</span>  
+        <span class="card__preci card__preci--now">$749.00</span>  
+      </div>  
+      <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>  
+    </div>  
+  </article>  
+  <script> $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:true,
+    items: 4,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{ items:1 },
+        574:{ items:2 },
+        600:{ items:2 },
+        800:{ items:3 },
+        1000:{ items:4 }, } })
+        </script> 
+</main> 
+</section> 
+</body>
+</html>

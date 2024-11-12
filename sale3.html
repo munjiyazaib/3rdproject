@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* body {
+    font-family: 'Merriweather', serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  } */
+  body {
+    /* font-family: 'Merriweather', serif; */
+    font-family: "Host Grotesk", sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    /* body {
+    background: beige;
+} */
+
+    .LIMITED-TIME {
+        height: 35px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navup {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navup1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navup2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav.navup3 {
+        padding: 15px;
+    }
+
+    input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .centerimg img {
+        height: 650px;
+        width: 350%;
+    }
+
+    .sct2image {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navup3 ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+
+    }
+
+    .navup3 a { text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .granti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+        padding: 30px;
+    }
+
+    .navup3ul {
+        display: flex;
+        gap: 3%;
+
+    }
+
+    /* .navup3 a {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 20px;
+    } */
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        display: flex;
+        width: 88%;
+        gap: 1%;
+        margin-bottom: 11px;
+        justify-content: center;
+    }
+
+    .slide {
+        width: 205px;
+        /* background-color: #9a8a7bf2; */
+       
+        background-color: #8f5e5675;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px ;
+    }
+
+    .slide img {
+        height: 267px;
+        width: 204px;
+    }
+
+    .logo-foot img {
+        background-color: white;
+    }
+
+    .head {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 120px 27px;
+        background-color: #ceb4a8;
+    }
+    .foothed h4 {
+    font-size: 24px;
+    line-height: 1.4em;
+}
+.foothed li{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+    .sofa-heding {
+        display: flex;
+        justify-content: center;
+        margin: 4%;
+    }
+
+    .btnvlt {
+        padding: 7px;
+    }
+
+    .btnvlt button {
+        height: 31px;
+        width: 111px;
+        font-size: 17px;
+        background-color: black;
+        color: white;
+        border: none;
+
+    }
+
+    .btnvlt button:hover {
+        background-color: #9b897c;
+        color: white;
+    }
+    input {
+    text-indent: 5%;
+    height: 28px;
+    width: 100%;
+}
+
+    .new-img img {
+        height: 300px;
+        width: 200px;
+    }
+
+    /* .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} */
+    .slide1-item img {
+        height: 200px;
+        width: 200px;
+    }
+    .present {
+    display: flex;
+    justify-content: center;
+    background-color: #ceb4a8;
+}
+/* .navup3{  position: sticky;
+        top: 0;
+        background-color: white;} */
+    @media screen and (min-width:300px) and (max-width:500px) {
+        .card{
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
+<body>
+    <section>
+        <div class="LIMITED-TIME">
+            <p>LIMITED-TIME OFFERS:FREE DELIVERY WITH ORDER OVER $99</p>
+        </div>
+        <nav class="navup">
+            <div class="navup1">
+                <div> <a href="./index.html" target="_blank"><img src="/logo.webp" alt=""></a></div>
+                <div><span>
+                        <b>+1(231)2075-1732</b> <br>
+                        <p>7 days a week from 9:00 am to 7:00 pm</p>
+                    </span>
+                </div>
+                <div> <input type="search" placeholder="Search">
+                    <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+                <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
+                <div class="navup2">
+                    <div><span>Wishlist</span></div>
+                    <div><span>Account <a href="./index1.html"></a></span></div>
+                    <div><span>0 item(s)</span></div>
+                </div>
+        </nav>
+        </div>
+    </section>
+    <section>
+        <nav class="navup3">
+            <ul type="none">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./catlog2.html">Catalog</a></li>
+                <li><a href="./sale3.html">sale offer</a></li>
+                <li><a href="./index1.html">Contact us</a></li>
+                <Li><a href="./blog4.html">Blog</a></Li>
+            </ul>
+    </section>
+
+    <!-- <section>
+        <div class="collection">
+            <div class="collection-image">
+                <img src="image/almir2.jpg" alt="">
+                <h6>alimir</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+    </section> -->
+    <div class="head"  id="furniture">
+        <h1>FURNITURE</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="slide">
+                <img src="/bed4.jpg" alt="">
+                <h2>Bed</h2>
+                <p>Sleek, low-profile design, ideal for modern, minimalist rooms </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/almir1.jpg" alt="">
+                <h2>Almira</h2>
+                <p> Classic, elegant style with four vertical posts for a timeless look. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/bed2.avif" alt="">
+                <h2>Bed</h2>
+                <p>Luxurious designs that offer a cozy, enclosed sleeping experience.</p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/almir2.jpg" alt="">
+                <h2>Almira</h2>
+                <p> Central pieces that combine function and style for any living room. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/bed3.jpg" alt="">
+                <h2>Bed</h2>
+                <p>Beds with built-in drawers or compartments for extra storage space. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="slide">
+                <img src="/dining2.jpg" alt="">
+                <h2>Dining Table</h2>
+                <p> Versatile tables designed for family meals or entertaining guests. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/nchair1.jpg" alt="">
+                <h2>Chair</h2>
+                <p> From lounge chairs to accent pieces, adding comfort and design to your space. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/mirrio.jpg" alt="">
+                <h2>Table & Mirror</h2>
+                <p> Compact, functional tables that complement larger furniture pieces. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/sofanew1.jpeg" alt="">
+                <h2>Sofa</h2>
+                <p> Stylish and comfortable seating designed to enhance any living room.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/rockchair.jpg" alt="">
+                <h2>Rocking Chair</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="image/dining2.jpg" alt="">
+                <h2>Dining Table</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/nchair1.jpg" alt="">
+                <h2>Chair</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/mirrio.jpg" alt="">
+                <h2>Table & Mirror</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/sofanew1.jpeg" alt="">
+                <h2>Sofa</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image/rockchair.jpg" alt="">
+                <h2>Rocking Chair</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="head" id="chandelier">
+        <h1> LIGTHING </h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="/lateen2.jpg" alt="">
+                <h2>Lamp</h2>
+                <p>The Lamp beutiful and elegent the bright  . </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/candle1.jpg" alt="">
+                <h2>Candle</h2>
+                <p>The candle beutiful and elegent the bright. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/chandelier2.jpg" alt="">
+                <h2>Chandelier</h2>
+                <p>The chandelier beutiful and elegent the bright. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/candlewhite.jpeg" alt="">
+                <h2>Candle holder</h2>
+                <p>The candle beutiful and elegent the bright. . </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/light.jpg" alt="">
+                <h2>Lamp</h2>
+                <p>The lamp beutiful and elegent the bright.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" >
+        <div class="card">
+
+            <div class="slide">
+                <img src="/lampoil.jpg" alt="">
+                <h2>Oil lamp</h2>
+                <p>The Lamp beutiful and elegent the bright.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/chandelier3.jpg" alt="">
+                <h2>chandelier</h2>
+                <p>The chandelier beutiful and elegent the bright. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/lampoil2.webp" alt="">
+                <h2>Lamp</h2>
+                <p>The lamp beutiful and elegent the bright.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/chandelier5.jpg" alt="">
+                <h2>chandelier</h2>
+                <p>The chandelier beutiful and elegent the bright.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/lateen.jpg" alt="">
+                <h2>Lateen</h2>
+                <p>The lateen beutiful and elegent the bright.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="head" id="cutlere">
+        <h1>CUTLERY</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="/cutlere.jpg" alt="">
+                <h2>Plate</h2>
+                <p>The plate beutiful and elegent the set.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/cupset2.jpg" alt="">
+                <h2>Cupset</h2>
+                <p>The cupset beutiful and elegent the set.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/cutlere1.jpg" alt="">
+                <h2>Plate</h2>
+                <p>The plate beutiful and elegent the set.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/drinkingglass.jpg" alt="">
+                <h2>Drinking Glass</h2>
+                <p>The glass beutiful and elegent the set.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/jug.jpg" alt="">
+                <h2>Tea Pot</h2>
+                <p>The pot beutiful and elegent the set.  </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="head" id="stamp">
+        <h1> COLLECTIBLE</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="/stamp2.jpg" alt="">
+                <h2>Stamp</h2>
+                <p>India 1969 first man on the moon stamp. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/coin.jpg" alt="">
+                <h2>Coin</h2>
+                <p>Saudi Arabic Guiea 1951 coin  one riyal. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/stamp.jpg" alt="">
+                <h2>stamp</h2>
+                <p>Italia antic stamp on the build . </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/coin2.jpg" alt="">
+                <h2>Coin</h2>
+                <p>india 10 paisa  coin of 1986 one riyal . </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/stamp3.jpg" alt="">
+                <h2>Stamp</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head" id="frame">
+        <h1>FRAMES</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="/frames1.jpg" alt="">
+                <h2>Frame</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/painting1.jfif" alt="">
+                <h2>painting</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/frames3.jpg" alt="">
+                <h2>Frame</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/frames4.jpg" alt="">
+                <h2>Frame</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+
+            </div>
+            <div class="slide">
+                <img src="/frames2.jpg" alt="">
+                <h2>sand frame</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="head" id="vases">
+        <h1>VASES</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="slide">
+                <img src="/port2.jpg" alt="">
+                <h2>Port</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/port3.jpg" alt="">
+                <h2>Port</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/portt1.jpg" alt="">
+                <h2>Vases</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/port7.jpg" alt="">
+                <h2>Port</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+
+            </div>
+            <div class="slide">
+                <img src="/port.jpg" alt="">
+                <h2>vases</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="btnvlt">
+                    <button>shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <footer>
+
+            <div class="footer">
+                <div class="logo-foot"><img src="/logo.webp" alt=""></div>
+                <div class="foothed">
+                    <h4>Your account</h4>
+                    <ul type="none">
+                        <li>Personal info</li>
+                        <li>Orders</li>
+                        <li>Credit slips</li>
+                        <li>Address</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <h4>Customer service</h4>
+                    <ul type="none">
+                        <li>Monday to Friday</li>
+                        <li>10am - 6.30pm (New york time) </li>
+                        <li>+(001) 91 94 45 61</li>
+                        <li>Send us a message</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <ul type="none">
+                        <h4>Our guarantees</h4>
+                        <li>Shipping in 3 days</li>
+                        <li>Free retuns within 14 days</li>
+                        <li>Secure payments</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <ul type="none">
+                        <h4>Our company </h4>
+                        <li>Delivery</li>
+                        <li>Legal Notice</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Terms and conditions of use</li>
+                    </ul>
+                </div>
+            </div>  
+            <!-- <div class="present">
+                <hr>
+<h1>presented by:Munjiya Zaib</h1>
+            </div> -->
+        </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>
