@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique</title>
+    <link rel="stylesheet" href="responsive2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<style>
+     /* body {
+    font-family: 'Merriweather', serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  } */
+  body {
+    /* font-family: 'Merriweather', serif; */
+    font-family: "Host Grotesk", sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .LIMITED-TIME {
+        height: 35px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navup {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navup1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navup2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav.navup3 {
+        padding: 15px;
+    }
+
+    input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .centerimg img {
+        height: 650px;
+        width: 350%;
+    }
+
+    .sct2image {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navup3 ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        justify-content: center;
+    }
+
+    .navup3 a {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .granti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+        padding: 30px;
+    }
+    .index-bg-image{
+        background-image: url(/nslide2.webp);
+        height: 500px;
+        width: 100%;
+    }
+    
+        /* .blogbg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+} */
+.index-bg-content {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 5%;
+}
+    
+.indexbg-content-head {
+    text-align: center;
+    font-size: 52px;
+    color: white;
+    width: 37%;}
+    .indexbg-content-para {
+    text-align: center;
+    width: 65%;
+    color: white;
+    font-size: 24px;
+}
+
+
+
+
+
+    .coll-img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* .coll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    padding: 30px;
+   } */
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2%;
+        width: 80%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 27px;
+        background-color: #ceb4a8;
+    }
+
+    .logo-foot img {
+        background-color: white;
+    }
+
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 120px 27px;
+    }
+
+   
+
+    .viwbtn button {
+        height: 38px;
+        width: 121px;
+        font-size: 17px;
+        background-color: #9b897c;
+        color: white;
+        border: none;
+    }
+    button a {
+    text-decoration: none;
+    color: white;
+}
+
+    /* .btnvlt button {
+        height: 38px;
+        width: 121px;
+        font-size: 17px;
+        background-color: #9b897c;
+        color: white;
+        border: none;
+
+    } */
+
+    .viwbtn button:hover {
+        background-color: black;
+        color: #9b897c;
+    }
+
+    /* image hover effect */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 7px;
+    }
+
+    .image-container img {
+
+        width: 350px;
+        height: 350px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Adjust opacity as needed */
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .image-container:hover .hover-content {
+        opacity: 1;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1%;
+        padding: 20px;
+    }
+   
+        input {
+    text-indent: 5%;
+    height: 28px;
+    width: 100%;
+}
+.foothed h4 {
+    font-size: 24px;
+}
+.foothed li{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+   /* 
+    .hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Adjust opacity as needed */
+    /* color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } */
+
+
+
+    section {
+        display: flex;
+        gap: 1%;
+    }
+
+   
+    @media screen and  (max-width:600px){
+    .index-bg-image{display: none;}
+    .navup2{display: none;}
+    }
+    @media screen and  (max-width:337px)
+  {.image-container img {
+    width: 350px;
+            height: 350px;}}
+
+</style>
+
+<body>
+    <div class="LIMITED-TIME">
+        <p>LIMITED-TIME OFFERS:FREE DELIVERY WITH ORDER OVER $99</p>
+    </div>
+    <nav class="navup">
+        <div class="navup1">
+            <div> <a href="./index.html" target="_blank"><img src="/logo.webp" alt=""></a></div>
+            <div><span>
+                    <b>+1(231)2075-1732</b> <br>
+                    <p>7 days a week from 9:00 am to 7:00 pm</p>
+                </span>
+            </div>
+            <div> <input type="Search" placeholder="Search">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+            <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
+            <div class="navup2">
+                <div><span>Wishlist</span></div>
+                <div><span>Account <a href="./index1.html"></a></span></div>
+                <div><span>0 item(s)</span></div>
+            </div>
+    </nav>
+    </div>
+    <nav class="navup3">
+        <ul type="none">
+            <li><a href="./index.html">Home</a></li>
+            </li><a href="./catlog2.html">Catalog</a></li>
+            <li><a href="./sale3.html">Sale</a></li>
+            <li><a href="./index1.html">Contact us</a></li>
+            <Li><a href="./blog4.html">Blog</a></Li>
+        </ul>
+    </nav>
+    <section>
+        <div class="index-bg-image">
+            <!-- <div class="index-bg-content">
+                <h1 class="indexbg-content-head">Eminent quality of the antique word</h1>
+                <p class="indexbg-content-para">Store's Collection features a wide range of antiques decorative object,
+                    book,furnishings and other old ,but fashionable things</p>
+                    <div class="btnvlt">
+                        <button>Shop Now</button>
+                    </div>
+            </div> -->
+        </div>
+    </section>
+    <div class="row">
+
+        <div class="image-container">
+            <img src="/catlogf.jpg" alt="">
+            <div class="hover-content">
+                <p>SOFA </p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#furniture">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="/chande.jpg" alt="">
+            <div class="hover-content">
+                <p>CHANDELIER</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#chandelier">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/dinnerset.jpg" alt="">
+            <div class="hover-content">
+                <p>CUTLERE </p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#cutlere">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="image-container">
+            <img src="/catlog.jpg" alt="">
+            <div class="hover-content">
+                <p>STAMP</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#stamp">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/framecatlog.jpg" alt="">
+            <div class="hover-content">
+                <p>FRAME</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#frame">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="/catport.jpg" alt="">
+            <div class="hover-content">
+                <p>VASES</p><br>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#vases">VIEW</a></button>
+                </div>
+            </div>
+        </div>-->
+    </div> 
+    <div class="row">
+
+        <!-- <div class="image-container">
+            <img src="/catlogf.jpg" alt="">
+            <div class="hover-content">
+                <p>SOFA </p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#furniture">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="/chande.jpg" alt="">
+            <div class="hover-content">
+                <p>CHANDELIER</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#chandelier">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/dinnerset.jpg" alt="">
+            <div class="hover-content">
+                <p>CUTLERE </p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#cutlere">VIEW</a></button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="image-container">
+            <img src="/catlog.jpg" alt="">
+            <div class="hover-content">
+                <p>STAMP</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#stamp">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/framecatlog.jpg" alt="">
+            <div class="hover-content">
+                <p>FRAME</p>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#frame">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="/catport.jpg" alt="">
+            <div class="hover-content">
+                <p>VASES</p><br>
+                <div class="viwbtn">
+                    <button><a href="sale3.html#vases">VIEW</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+    <footer>
+        <div class="footer">
+            <div class="logo-foot"><img src="/logo.webp" alt=""></div>
+            <div class="foothed">
+                <h4>Your account</h4>
+                <ul type="none">
+                    <li>Personal info</li>
+                    <li>Orders</li>
+                    <li>Credit slips</li>
+                    <li>Address</li>
+                </ul>
+            </div>
+            <div class="foothed">
+                <h4>Customer service</h4>
+                <ul type="none">
+                    <li>Monday to Friday</li>
+                    <li>10am - 6.30pm (New york time) </li>
+                    <li>+(001) 91 94 45 61</li>
+                    <li>Send us a message</li>
+                </ul>
+            </div>
+            <div class="foothed">
+                <ul type="none">
+                    <h4>Our guarantees</h4>
+                    <li>Shipping in 3 days</li>
+                    <li>Free retuns within 14 days</li>
+                    <li>Secure payments</li>
+                </ul>
+            </div>
+            <div class="foothed">
+                <ul type="none">
+                    <h4>Our company </h4>
+                    <li>Delivery</li>
+                    <li>Legal Notice</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Terms and conditions of use</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <div class="pwr">Powered by:Munjiya zaib</div>
+</section>
+
+</body>
+
+</html>

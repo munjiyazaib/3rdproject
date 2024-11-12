@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+    }
+
+    .slide {
+        background-color: #8f5e5675;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide img {
+        height: 300px;
+        width: 250px;
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 0%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    div#topslider {
+        overflow: hidden;
+    }
+
+    div#topslider figure img {
+        width: 20%;
+        float: left;
+    }
+
+    div#topslider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slidy infinite;
+    }
+
+    .nslide1 {
+        background-image: url(nslide1.webp);
+        z-index: 1;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    /* image hover effect */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 7px;
+    }
+
+    .image-container img {
+
+        width: 202px;
+        height: 221px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Adjust opacity as needed */
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .image-container:hover .hover-content {
+        opacity: 1;
+    }
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.image-container {
+    position: relative;
+    width: 25%; /* Four images per row */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(0, 123, 255, 0.7);
+    transition: transform 0.4s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.image-container:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+</style>
+
+<body>
+    <div id="topslider">
+        <figure>
+            <!-- <div class="nslide1">
+                <h1>Eminent quaity of the antique</h1>
+                <p>store's collection features a wide range of antiques, decorative objects, home furnishing and other
+                    old ,but fashionable things</p>
+
+            </div> -->
+            <img src="nslide1.webp" alt>
+            <img src="image/nslide2.webp" alt>
+            <img src="image/nslide3.webp" alt>
+            <img src="nslide1.webp" alt>
+            <img src="image/nslide2.webp" alt="">
+        </figure>
+    </div>
+<div class="row">
+   
+<div class="image-container">
+        <img src="image/glass1.jpg" alt="">
+        <div class="hover-content">
+            <p>the soft drink glass </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="image/glass1.jpg" alt="">
+        <div class="hover-content">
+            <p>the soft drink glass </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="image/glass1.jpg" alt="">
+        <div class="hover-content">
+            <p>the soft drink glass </p>
+        </div>
+    </div>
+</div>
+    <!-- <div class="container">
+        <div class="card">
+            <div class="slide">
+                <img src="image/almir1.jpg" alt="">
+                <h2>alimkiyt</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="slide">
+                <img src="image/almir1.jpg" alt="">
+                <h6>alimkiyt</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="slide">
+                <img src="image/almir1.jpg" alt="">
+                <h6>alimkiyt</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div> 
+            <div class="slide">
+                <img src="image/almir1.jpg" alt="">
+                <h6>alimkiyt</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="slide">
+                <img src="image/almir1.jpg" alt="">
+                <h6>alimkiyt</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </div> -->
+ 
+    <div class="gallery">
+        <div class="image-container">
+            <img src="image/almir1.jpg" alt="Image 1" />
+        </div>
+        <div class="image-container">
+            <img src="image/almir2.jpg" alt="Image 2" />
+        </div>
+        <div class="image-container">
+            <img src="image/almir3.jpg" alt="Image 3" />
+        </div>
+        <div class="image-container">
+            <img src="image/almir1.jpg" alt="Image 4" />
+        </div>
+        <div class="image-container">
+            <img src="image/almir1.jpg" alt="Image 5" />
+        </div>
+        <div class="image-container">
+            <img src="image6.jpg" alt="Image 6" />
+        </div>
+        <div class="image-container">
+            <img src="image7.jpg" alt="Image 7" />
+        </div>
+        <div class="image-container">
+            <img src="image8.jpg" alt="Image 8" />
+        </div>
+    </div>
+
+
+</body>
+
+</html>

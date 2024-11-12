@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<style>
+    /* body {
+    font-family: 'Merriweather', serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  } */
+    body {
+        /* font-family: 'Merriweather', serif; */
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        /* border: 2px solid red; */
+    }
+
+    body {
+        .old-standard-tt-regular {
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .old-standard-tt-bold {
+            font-family: "Old Standard TT", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .old-standard-tt-regular-italic {
+            font-family: "Old Standard TT", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+
+    .LIMITED-TIME {
+        height: 35px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navup {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navup1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navup2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav.navup3 {
+        padding: 15px;
+    }
+
+    .navup3 {
+        position: sticky;
+    }
+
+    input {
+        text-indent: 5%;
+        outline: none;
+        height: 30px;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .centerimg img {
+        height: 650px;
+        width: 350%;
+    }
+
+    .sct2image {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .navup3 ul {
+        justify-content: center;
+        display: flex;
+        gap: 3%;
+
+    }
+
+    .navup3 a {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .granti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+        padding: 30px;
+    }
+
+    .index-bg-image {
+        background-image: url(/nslide1.webp);
+        height: 500px;
+        width: auto;
+    }
+
+    /* .blogbg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+} */
+    .index-bg-content {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 5%;
+    }
+
+    .indexbg-content-head {
+        text-align: center;
+        font-size: 52px;
+        color: white;
+        width: 37%;
+        line-height: 1.1em;
+    }
+
+    .indexbg-content-para {
+        text-align: center;
+        width: 65%;
+        color: white;
+        font-size: 24px;
+        line-height: 1.3em;
+    }
+
+
+
+
+    /* body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    /* height: 100vh; 
+    overflow: hidden; 
+}*/
+
+
+    .container {
+
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2%;
+        width: 80%;
+
+    }
+
+    .container .new-img img {
+        height: 290px;
+        width: 267px;
+        image-rendering: auto;
+    }
+
+    .container-sale .new-img img {
+        height: 290px;
+        width: 267px;
+        image-rendering: auto;
+    }
+
+    .container-sale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+    }
+
+    .new {
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    /* sct2image img {
+    height: 432px;
+    width: 653px;
+} */
+    .img img {
+        height: 176% !important;
+        width: 97%;
+    }
+
+
+    .sale {
+        font-size: 17px;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .scthed1 {
+        text-align: center;
+        font-size: 42px !important;
+    }
+
+    .sctpar1 {
+        text-align: center;
+        font-size: 19px !important;
+    }
+
+    .sctcontant {
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnvlt button {
+        height: 38px;
+        width: 121px;
+        font-size: 17px;
+        background-color: #9b897c;
+        color: white;
+        border: none;
+
+    }
+
+    .btnvlt button:hover {
+        background-color: black;
+        color: #9b897c;
+    }
+
+
+    .container3 {
+        margin: 0px 54px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    .offer-box {
+        background-color: #9b897c;
+        text-align: center;
+    }
+
+    .offer-box-content h1 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .offer-box-content h6 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .offer-box img {
+        height: 550px;
+        width: 400px;
+    }
+
+    .bestseller img {
+        height: 200px;
+        width: 200px;
+        image-rendering: auto;
+    }
+
+    .bestseller {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container2 {
+        width: 88%;
+        justify-content: center;
+        padding: 2% 6%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .back-image {
+        background-image: url(/backgroundimage.webp);
+        height: 300px;
+        width: 100%;
+    }
+
+    .backimg-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 5%;
+    }
+
+    .offer-box-content {
+        padding: 20px;
+    }
+
+    .backimg-content h1 {
+        color: white;
+        font-size: 70px;
+    }
+
+    .backimg-content h3 {
+        color: white;
+        font-size: 25px;
+    }
+
+    .container4 {
+        padding: 20px;
+    }
+
+    /* .container5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 64px 45px;
+        gap: 2%;
+    } */
+
+
+    .container6 {
+
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        flex-wrap: wrap;
+    }
+
+    .hover-content p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .comment-box {
+        padding: 15px;
+        max-width: 374px;
+        text-align: center;
+        /* background: #fff;
+        box-shadow: 5px 5px 20px #7c7e8326; */
+        background-color: #f0f0f073;
+        box-shadow: 10px 10px 15px 5px rgb(0 0 0 / 6%);
+        margin-bottom: 15px;
+    }
+
+    /* .blogcontent {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 22px 8%;} */
+
+
+    .sub-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* .blogcontent-1 {
+
+        line-height: 1.3em;
+    } */
+
+
+
+    .granti img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .container7 {
+        gap: 11%;
+        display: flex;
+        justify-content: center;
+        background: #303030;
+        padding: 20px;
+        margin: 58px 0px;
+    }
+
+    .sub-box h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .sub-box p {
+        font-size: 20px;
+        color: white;
+    }
+
+    span h6 {
+        line-height: 2em;
+        font-size: 20px;
+    }
+
+    .blogcontent h2 {
+        font-size: 40px;
+        color: #9b897c;
+
+    }
+
+    .blogcontent p {
+        font-size: 20px;
+        color: #303030;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 4%;
+        background-color: #ceb4a8;
+
+    }
+
+    .logo-foot img {
+        background-color: white;
+    }
+
+    .foothed h4 {
+        font-size: 20px;
+    }
+
+    /* .foothed h4:hover {
+        color: grey;
+        font-size: 25px;
+    }
+
+    .foothed li:hover {
+        color: grey;
+        font-size: 20px;
+    } */
+
+    .text-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .blog-overall {
+        display: flex;
+        gap: 19px;
+        width: 33.33%;
+        flex-direction: column;
+    }
+
+    i {
+        font-size: 20px;
+        padding: 23px;
+    }
+
+    .btn button {
+        border: none;
+        height: 34px;
+        width: 124px;
+        color: black;
+        background-color: #8f7f70;
+    }
+
+    .btn button:hover {
+        background-color: black;
+        color: #9b897c;
+        cursor: pointer;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 3px;
+    }
+
+    .image-container img {
+
+        width: 202px;
+        height: 221px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .hover-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Adjust opacity as needed */
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .image-container:hover .hover-content {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* box slider css */
+
+    .slider1-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider1 {
+        display: flex;
+        gap: 3px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slide1-item {
+        flex: 0 0 16.66%;
+        /* / Show 6 items /  */
+        margin: 10px;
+        background-color: #f1e5e4e3;
+        /* background-color: #8f5e5675; */
+        color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: start;
+    }
+
+    /* .slide1-item img {
+            width: 200px;
+            height: 300px;
+            border-radius: 8px;
+        } */
+    .slide1-item img {
+        width: 199px;
+        height: 257px;
+        border-radius: 8px;
+    }
+
+    h4 {
+        margin: 10px 0;
+    }
+
+    .slider1-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        font-size: 24px;
+    }
+
+    .left-btn {
+        left: 0;
+    }
+
+    .right-btn {
+        right: 0;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* flip card */
+    section.flip-body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+        margin-bottom: 112px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 77%;
+        height: 145%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+    }
+
+    .flip-card-front img {
+        height: 290px;
+        width: 235px;
+        border-radius: 13px;
+        /* background-color: #007bff; */
+        /* background-image: url(image/almir1.jpg); */
+    }
+
+    /* .flip-card-front { background-image: url(image/sofa1.jfif); }
+    .flip-card-front { background-image: url(image/canva1.jfif); }
+    .flip-card-front { background-image: url(image/bed1.jpg); } */
+
+    .flip-card-back {
+        background-color: #28343a;
+        transform: rotateY(180deg);
+    }
+
+    /* blog  */
+    /* .container5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 64px 45px;
+        gap: 2%;
+    } */
+    .blog {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        /* flex-wrap: wrap; */
+        gap: 2%;
+    }
+
+    .blogcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 22px 8%;
+    }
+
+    /* .blog-overall{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } */
+
+    .blogcontent-1 {
+        line-height: 1.3em;
+    }
+
+    /* .nav {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    } */
+    .pwr {
+        padding: 19px;
+        background: #ceb4a8;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foothed h4 {
+        font-size: 24px;
+    }
+
+    .foothed li {
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <div class="LIMITED-TIME">
+        <p>LIMITED-TIME OFFERS:FREE DELIVERY WITH ORDER OVER $99</p>
+    </div>
+    <nav class="nav">
+        <nav class="navup">
+            <div class="navup1">
+                <div> <a href="./index.html" target="_blank"><img src="/logo.webp" alt=""></a></div>
+                <div><span>
+                        <b>+1(231)2075-1732</b> <br>
+                        <p>7 days a week from 9:00 am to 7:00 pm</p>
+                    </span>
+                </div>
+                <!-- <div class="search-box"> -->
+                <div class="text-box">
+                    <div>
+                        <input type="search" placeholder="search">
+                    </div>
+                    <div>
+                        <!-- <-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    </div>
+                </div>
+                <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
+                <div class="navup2">
+                    <div><span class="wish">Wishlist <i class="fa-regular fa-heart"></i></span></div>
+                    <div><span>Account <a href="./index1.html"></a></span></div>
+                    <div><span>0 item(s)</span></div>
+                </div>
+        </nav>
+        </div>
+
+        <nav class="navup3">
+            <ul type="none">
+                <li><a href="./index.html">Home</a></li>
+                </li><a href="./catlog2.html">Catalog</a></li>
+                <li><a href="./sale3.html">Sale</a></li>
+                <li><a href="./index1.html">Contact us</a></li>
+                <Li><a href="./blog4.html">Blog</a></Li>
+            </ul>
+        </nav>
+    </nav>
+    <section>
+        <div class="index-bg-image">
+            <div class="index-bg-content">
+                <h1 class="indexbg-content-head">Eminent quality of the antique word</h1>
+                <p class="indexbg-content-para">Store's Collection features a wide range of antiques decorative object,
+                    book,furnishings and other old ,but fashionable things</p>
+                <div class="btnvlt">
+                    <button><a href="sale3.html">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="granti">
+        <div><img src="/logo1.jpg" alt=""><br>
+            <!-- <i class="fa-solid fa-bag-shopping" style="color: #9c8b7f;"></i> -->
+            <span>
+                <b>Free Delivery</b><br> Free shop for all order
+            </span>
+        </div>
+        <div>
+            <img src="/logo4.jpg" alt=""><br>
+            <span><b>100% payment secure</b><br>payment 100% secured</span>
+        </div>
+        <div>
+            <img src="/logo2.jpg" alt=""><br>
+            <span>
+                <b>14 Days retun</b> <br> you have 14 days only</span>
+        </div>
+        <div>
+            <img src="/logo3.jpg" alt=""><br>
+            <span><b>support 24/7</b> <br> we support 24 hours a day </span>
+        </div>
+    </div>
+    <div class="new">
+        <h1>NEW IN </h1>
+    </div>
+    <!-- <section> -->
+    <!-- <div class="container" style="overflow: auto;">
+            <div class="new-img"><img src="image/chair3.jpg" alt="">
+                <h4>Claudia Lounge Chair <br>(Cotton, Magnolia Beige)</h4>
+            </div>
+            <div class="new-img"><img src="image/jhomar2.jfif" alt="">
+                <h4> pendant light 3 rings classic look <br> LED Chandelier </h4>
+            </div>
+            <div class="new-img"><img src="image/sofa1.jfif" alt="">
+                <h4>Berlin 2 seater sofa white</h4>
+            </div>
+            <div class="new-img"><img src="image/clock.jfif" alt="">
+                <h4>Round Shaped Double Sided <br>Vintage Wall Clock</h4>
+            </div>
+            <div class="new-img"><img src="image/glass.webp" alt="">
+                <h4>Soft drink glass</h4>
+            </div>
+            <div class="new-img"><img src="image/table.jpg" alt="">
+                <h4>ETILAN Modern coffee Table for <br> Living Room</h4>
+            </div> -->
+    <div class="slider1-container">
+        <button class="slider1-btn left-btn" onclick="slide1Left()">&#10094;</button>
+        <div class="slider1" id="slider1">
+            <div class="slide1-item">
+                <img src="/almir4.jpg" alt="Almira">
+                <h4>Almira</h4>
+                <p>Almira with three door and storage capacity.</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/chandeliernew2.jpg" alt="Chandelier">
+                <h4>Chandelier</h4>
+                <p>Large Louis XV style cut-glass Thirty-light Cage Chandelier 1870.</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/sofa1.jfif" alt="Sofa">
+                <h4>Sofa</h4>
+                <p>sofa with three seater white and gold color polish.</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/clocknew1.jpg" alt="Clock">
+                <h4>Clock</h4>
+                <p>European retro antique gold carved table clock home .</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/lampnew.jpg" alt="Lamp">
+                <h4>Lamp</h4>
+                <p>Vieile lamp de table luxe laiton lamp.</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/table2.jpg" alt="Product 6">
+                <h4>Table</h4>
+                <p>Antique Table with green glass with gold colour.</p>
+            </div>
+            <div class="slide1-item">
+                <img src="/bed1.jpg" alt="Product 6">
+                <h4>Bed</h4>
+                <p>luxury Antique bed with black colour theme with royal look.</p>
+            </div>
+        </div>
+        <button class="slider1-btn right-btn" onclick="slide1Right()">&#10095;</button>
+    </div>
+
+    <script>
+        const slider1 = document.getElementById('slider1');
+
+        function slide1Left() {
+            slider1.scrollLeft -= slider1.offsetWidth; // Scroll left by the width of the container
+        }
+
+        function slide1Right() {
+            slider1.scrollLeft += slider1.offsetWidth; // Scroll right by the width of the container
+        }
+    </script>
+
+
+
+
+
+
+    <!-- </div>
+    </section> -->
+    <div class="sale">
+
+        <h1>ON SALE</h1>
+    </div>
+    <section class="flip-body">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/bed5.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <i>The anthique black bed with lighting in room </i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/sofadevan.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <i> french style pune sette sofa antique hand carved wood sofa </i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/setcutlere.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <i>Antique dinner set with black theme</i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/framesle.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <i> Superb Oval Antique Victorian Dried Floral Arrangement In Gold Tone Frame</i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="container-sale" style="overflow: auto;">
+            <div class="new-img"><img src="image/phone1.webp" alt="">
+                <h4>New dailing phone </h4>
+            </div>
+            <div class="new-img"><img src="image/clock2.webp" alt="">
+                <h4>clock with steel stick have golg color in</h4>
+            </div>
+            <div class="new-img"><img src="image/jhomar1.jfif" alt="">
+                <h4>LED light with 3 circle 2 feet</h4>
+            </div>
+            <div class="new-img"><img src="image/table.jpg" alt="">
+                <h4>Tea table white marvel </h4>
+            </div>
+        </div>
+    </section> -->
+    <section class="container2">
+        <div class="sct2image">
+            <div class="img"><img src="/centerimg1.webp" alt="">
+                <div class="sctcontant">
+                    <h1 class="scthed1">Exclusive Vintage <br> accessories</h1>
+                    <h6 class="sctpar1"> Up to 50% OFF + Extra 15% On Orders over $89</h6>
+                    <!-- <button class="btnvlt">shop now</button> -->
+                    <div class="btnvlt">
+                        <button>shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="img"><img src="/centerimg2.webp" alt="">
+                <div class="sctcontant">
+                    <h1 class="scthed1">Memories & treasures <br> are cherished</h1>
+                    <h6 class="sctpar1">Up to 30% Discount on Antique furniture</h6>
+                    <div class="btnvlt">
+                        <button>shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sale">
+            <h1>BEST SELLER</h1>
+        </div>
+        <div class="container3">
+            <div class="offer-box">
+                <div class="offer-box-content">
+                    <h1> LIMITED EDITION </h1>
+                    <h6>A great collection </h6>
+                    <!-- <button>shop now</button> -->
+                    <div class="btnvlt">
+                        <button><a href="catlog2.html">Shop Now</a></button>
+                    </div>
+                </div>
+                <img src="/bst.png" alt="">
+            </div>
+
+            <div class="bestseller" style="overflow: auto;">
+
+
+                <div class="image-container">
+                    <img src="/bestseller1.jfif" alt="">
+                    <div class="hover-content">
+                        <p>the blue ancient plate</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="/ornate-sofa-art-nouveau-style.jpg" alt="">
+                    <div class="hover-content">
+                        <p>blue sofa with three seater</p>
+                    </div>
+                </div>
+                <div class="image-container" id="blog-chair">
+                    <img src="/bestseller3.jfif" alt="">
+                    <div class="hover-content">
+                        <p>A wooden single chair sofa </p>
+                    </div>
+                </div>
+                <div class="image-container" id="blog-picture"><img src="/bestseller4.webp" alt="">
+                    <div class="hover-content">
+                        <p>the designer picture </p>
+                    </div>
+                </div>
+
+                <!-- <div><img src="image/new2ho.webp" alt="">
+                    <h5>the old and antic homophone</h5>
+                </div> -->
+
+                <div class="image-container">
+                    <img src="/new2ho.webp" alt="Image">
+                    <div class="hover-content">
+                        <!-- <h2>Hover Title</h2> -->
+                        <p>the old and antic homophone</p>
+                    </div>
+                </div>
+
+
+                <div class="image-container"><img src="/blog4.jpg" alt="">
+                    <div class="hover-content">
+                        <!-- <h2>Hover Title</h2> -->
+                        <p>the old book of acient period</p>
+                    </div>
+                    <!-- <h5>the old book of acient period</h5> -->
+                </div>
+                <div class="image-container"><img src="/images.jfif" alt="">
+                    <div class="hover-content">
+                        <p>magnifine glass</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="/port.jpg" alt="Image">
+                    <div class="hover-content">
+
+                        <p>white port with flower.</p>
+                    </div>
+                </div>
+                <div class="image-container"><img src="/coin.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container"><img src="/lampbest.jpg" alt="">
+                    <div class="hover-content">
+                        <p>lamp </p>
+                    </div>
+                </div>
+
+                <div class="image-container"><img src="/bestseller9.jfif" alt="">
+                    <div class="hover-content">
+                        <p>bedroom </p>
+                    </div>
+                </div>
+                <div class="image-container" id="blog-glass"><img src="/glass1.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="blog6"><img src="/blog6.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="catclock"> <img src="/catclock4.jfif" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="blog7"><img src="/blog7.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="candle"><img src="/candlewhite.jpeg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="frame"><img src="/frames2.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+                <div class="image-container" id="jug"><img src="/jug.jpg" alt="">
+                    <div class="hover-content">
+                        <p>the soft drink glass </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container4">
+        <div class="back-image">
+            <div class="backimg-content">
+                <h1>Hurry up,don't miss your chance!</h1>
+                <h3>Up to 50% OFF + Extra 15% On Orders over $89</h3>
+                <div class="btnvlt">
+                    <button><a href="sale3.html">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sale">
+
+        <h1>BLOG</h1>
+    </div>
+    <!-- <section>
+        <div>
+            <div class="container5">
+                <div class="blogcontent">
+                    <h2>Blog</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequuntur excepturi
+                        exercitationem nostrum adipisci, corrupti quod quos nisi facilis dolor harum unde, sequi porro
+                        itaque, minima quidem quo reprehenderit enim!</p>
+                    <div class="btnvlt"><button><a href="blog.html">VIEW ARTICLES</a></button></div>
+                </div>
+                <div>
+                    <img src="image/blog1.webp" alt="">
+                    <div class="blog-content-1"><span>
+                            <p>september 10 2007</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius accusantium sit aliquid
+                                praesentium consequatur ut libero modi, labore provident, ad ducimus fugit. Ea tempora
+                                nam aperiam minima, quos molestiae obcaecati!
+                            </p>
+                        </span>
+                        <div><a href="blog.html">Read more</a></div>
+                    </div>
+                </div>
+                <div><img src="image/blog2.webp" alt="">
+                    <div class="blog-content-1"><span>
+                            <p>April 16 1996</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius accusantium sit aliquid
+                                praesentium consequatur ut libero
+                                modi, labore provident, ad ducimus fugit. Ea tempora
+                                nam aperiam minima, quos molestiae obcaecati!
+                            </p>
+                        </span>
+                        <div><a href="blog.html">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <section>
+
+        <!-- <div class="container5"> -->
+        <div class="blog">
+            <div class="blog-overall">
+                <img src="/blog3.jpg" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <h6>Antiq Clock</h6>
+                        <p>An antique clock is not just a functional timepiece; it is a statement of elegance,
+                            craftsmanship, and history. Whether it’s a grand grandfather clock or a delicate mantel
+                            clock, these vintage timepieces can elevate any room with their beauty and charm.
+                        </p>
+                        <p>september 10 1921</p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="/blog1.webp" alt="">
+                <div class="blog-content-1"><span>
+                        <h6>The book </h6>
+                        <p>Vintage books are more than just paper and ink—they’re pieces of history. From the printing
+                            techniques used to the types of paper and bindings, each vintage book carries a story not
+                            only from its content but also from its production. Books published in earlier centuries</p>
+                        <p>March 17 1934</p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="/blog2.webp" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <h6>Maps and letter</h6>
+                        <p>Maps are more than just navigational tools; they are windows into history, culture, and
+                            exploration. Whether you’re a seasoned cartography enthusiast or someone looking to add a
+                            unique touch to your home decor, antique maps offer an exciting glimpse into the past.
+                        </p>
+                        <p>July 3 1891</p>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <!-- </div>
+        </div> -->
+    </section>
+
+
+
+    <div class="sale">
+        <h1>What Customers Say </h1>
+    </div>
+
+
+    <section>
+        <div class="containerspace">
+            <div class="container6">
+                <div class="comment-box">
+                    <p>Sarah M. | Verified Buyer</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>The dining table I purchased is a real statement piece. It’s solid, well-made, and the wood grain
+                        is beautiful. We’ve had so many compliments on it, and it’s holding up well after months of
+                        daily use."</p>
+                    <!-- <p><i>Elvin </i></p> -->
+                </div>
+                <div class="comment-box">
+                    <p>John D. | Verified Customer</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"These decorative vases are exactly what I needed to complete my mantelpiece. They are elegant,
+                        and the colors are soft yet eye-catching. The quality is fantastic too!"</p>
+
+                </div>
+                <div class="comment-box">
+                    <p> Sowban. | Verified Customer</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"This vintage clock is a beautiful piece to add to my collection. It’s rare to find something in
+                        such great condition, and the intricate detailing is just gorgeous. It brings a lovely sense of
+                        nostalgia to my home."</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container7">
+            <div class="sub-box">
+                <h1>Subscribe to newsletter</h1>
+                <p>You'll be the first to know about offers & exclusive print deals!</p>
+            </div>
+            <div class="text-box">
+                <div> <input type="email" placeholder="Enter your email" class="input-filed"></div>
+                <div class="btn"> <button type="submit">Submit</button></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="footer">
+                <div class="logo-foot"><img src="/logo.webp" alt=""></div>
+                <div class="foothed">
+                    <h4>Your account</h4>
+                    <ul type="none">
+                        <li>Personal info</li>
+                        <li>Orders</li>
+                        <li>Credit slips</li>
+                        <li>Address</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <h4>Customer service</h4>
+                    <ul type="none">
+                        <li>Monday to Friday</li>
+                        <li>10am - 6.30pm (New york time) </li>
+                        <li>+(001) 91 94 45 61</li>
+                        <li>Send us a message</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <ul type="none">
+                        <h4>Our guarantees</h4>
+                        <li>Shipping in 3 days</li>
+                        <li>Free retuns within 14 days</li>
+                        <li>Secure payments</li>
+                    </ul>
+                </div>
+                <div class="foothed">
+                    <ul type="none">
+                        <h4>Our company </h4>
+                        <li>Delivery</li>
+                        <li>Legal Notice</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Terms and conditions of use</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <hr>
+        <div class="pwr">Powered by:Munjiya zaib</div>
+    </section>
+
+</body>
+
+</html>

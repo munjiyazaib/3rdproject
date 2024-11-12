@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<style>
+     /* body {
+    font-family: 'Merriweather', serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  } */
+  body {
+    /* font-family: 'Merriweather', serif; */
+    font-family: "Host Grotesk", sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .LIMITED-TIME {
+        height: 35px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navup {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navup1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navup2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .navup2 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav.navup3 {
+        padding: 15px;
+    }
+
+    input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .centerimg img {
+        height: 650px;
+        width: 350%;
+    }
+
+    .sct2image {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navup3 ul {
+        display: flex;
+        gap: 3%;
+        justify-content: center;
+    }
+
+    .navup3 a {
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .granti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7%;
+        padding: 30px;
+    }
+    input {
+    text-indent: 5%;
+    height: 28px;
+    width: 100%;
+}
+
+    .blogbg-image {
+        background-image: url(/nslide3.webp);
+        height: 500px;
+        width: auto;
+    }
+    .blog-overall {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+    /* .blogbg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+} */
+    .blogbg-content {
+        opacity: 0.8;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .blogbg-content-head {
+        font-size: 37px;
+        color: white;
+    }
+
+    .blogbg-content-para {
+        color: white;
+        font-size: 21px;
+    }
+
+    .container5 {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        padding: 64px 45px;
+        gap: 2%;
+    }
+
+    .blogcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 22px 8%;
+    }
+
+    .blog-content-1 span {
+    gap: 11px;
+    display: flex;
+    flex-direction: column;
+}
+    /* .blog-overall{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } */
+   
+.blog-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+    .blogcontent-1 {
+        line-height: 1.3em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 27px;
+        background-color: #ceb4a8;
+    }
+
+    .logo-foot img {
+        background-color: white;
+    }
+
+   
+    .navup3{  position: sticky;
+        top: 0;
+        background-color: white;}
+        .foothed h4 {
+    font-size: 24px;
+    line-height: 1.4em;
+}
+.foothed li{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+span h6 {
+    line-height: 2em;
+    font-size: 20px;
+}
+
+    @media screen and (min-width:300px) and (max-width:600px) {
+        .LIMITED-TIME p {
+            font-size: 10px !important;
+        }
+
+        .container5 {
+            flex-direction: column;
+        }
+
+        .container5 img {
+
+            height: 200px;
+            width: 234px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .footer {
+            line-height: 26px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 13px;
+        }
+
+        .navup3 a {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width:601px) and (max-width:1200px) {
+        .container5 {
+            flex-wrap: wrap;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .blog-overall img {
+            height: 200px;
+            width: 217px;
+        }
+
+        .blog-content-1 p {
+            width: 269px;
+        }
+
+        .blog-content-1 {
+            text-align: center;
+        }
+
+        .blog-overall img {
+            height: 206px;
+            width: 269px;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="LIMITED-TIME">
+        <p>LIMITED-TIME OFFERS:FREE DELIVERY WITH ORDER OVER $99</p>
+    </div>
+    <nav class="navup">
+        <div class="navup1">
+            <div class="imagelog"> <a href="./index.html" target="_blank"><img src="/logo.webp" alt=""></a></div>
+            <div><span>
+                    <b>+1(231)2075-1732</b> <br>
+                    <p>7 days a week from 9:00 am to 7:00 pm</p>
+                </span>
+            </div>
+            <div> <input type="search" placeholder="Search">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+            <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
+            <div class="navup2">
+                <div><span>Wishlist</span></div>
+                <div><span> <a href="./index1.html">Account</a></span></div>
+                <div><span>0 item(s)</span></div>
+            </div>
+    </nav>
+    </div>
+    <nav class="navup3">
+        <ul type="none">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./catlog2.html">Catalog</a></li>
+            <li><a href="./sale3.html">sale offer</a></li>
+            <li><a href="./index1.html">Contact us</a></li>
+            <Li><a href="./blog4.html">Blog</a></Li>
+        </ul>
+    </nav>
+    <section>
+        <div class="blogbg-image">
+            <div class="blogbg-content">
+                <h1 class="blogbg-content-head">Eminent quality of the antique word</h1>
+                <p class="blogbg-content-para">Store's Collection features a wide range of antiques decorative object,
+                    book,furnishings and other old ,but fashionable things</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container5">
+            <div class="blog-overall">
+                <img src="/blog3.jpg" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <h6>Antiq Clock</h6>
+                        <p>An antique clock is not just a functional timepiece; it is a statement of elegance, craftsmanship, and history. Whether it’s a grand grandfather clock or a delicate mantel clock, these vintage timepieces can elevate any room with their beauty and charm.
+                        </p>
+                        <p>september 10 1921</p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="/blog1.webp" alt="">
+                <div class="blog-content-1"><span>
+                    <h6>The book </h6>
+                        <p>Vintage books are more than just paper and ink—they’re pieces of history. From the printing techniques used to the types of paper and bindings, each vintage book carries a story not only from its content but also from its production. Books published in earlier centuries </p>
+                        <p>March 17 1934</p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="/blog2.webp" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <h6>Maps and letter</h6>
+                        <p>Maps are more than just navigational tools; they are windows into history, culture, and exploration. Whether you’re a seasoned cartography enthusiast or someone looking to add a unique touch to your home decor, antique maps offer an exciting glimpse into the past.
+                        </p>
+                        <p>July 3 1891</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- </div>
+                <div><img src="image/blog4.jpg" alt=""></div>
+            </div> -->
+        </div>
+    </section >
+    <!-- <section class="blog-flex"><div><img src="image/blog5.jpg.crdownload" alt=""></div><div><h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis vitae, quia aspernatur odio repudiandae blanditiis, modi .</h1></div></section>
+    <section>
+
+        <div class="container5">
+            <div class="blog-overall">
+                <img src="image/blog5.jpg.crdownload" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <p>september 10 2007</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius accusantium sit aliquid
+                            praesentium consequatur ut libero modi, labore provident, ad ducimus fugit. Ea tempora
+                            nam aperiam minima, quos molestiae obcaecati!
+                        </p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="image/blog6.jpg" alt="">
+                <div class="blog-content-1"><span>
+                        <p>september 10 2007</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius accusantium sit aliquid
+                            praesentium consequatur ut libero modi, labore provident, ad ducimus fugit. Ea tempora
+                            nam aperiam minima, quos molestiae obcaecati!
+                        </p>
+                    </span>
+
+                </div>
+            </div>
+            <div class="blog-overall">
+                <img src="image/blog7.jpg" alt="">
+                <div class="blog-content-1">
+                    <span>
+                        <p>september 10 2007</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius accusantium sit aliquid
+                            praesentium consequatur ut libero modi, labore provident, ad ducimus fugit. Ea tempora
+                            nam aperiam minima, quos molestiae obcaecati!
+                        </p>
+                    </span>
+
+                </div>
+            </div>
+
+            </div>
+                <div><img src="image/blog4.jpg" alt=""></div>
+            </div> -->
+        </div>
+    </section>
+    <footer>
+
+        <div class="footer">
+            <div class="logo-foot"><img src="/logo.webp" alt=""></div>
+            <div class="foothed">
+                <h4>Your account</h4>
+                <ul type="none">
+                    <li>Personal info</li>
+                    <li>Orders</li>
+                    <li>Credit slips</li>
+                    <li>Address</li>
+                </ul>
+            </div>
+            <div class="foothed">
+                <h4>Customer service</h4>
+                <ul type="none">
+                    <li>Monday to Friday</li>
+                    <li>10am - 6.30pm (New york time) </li>
+                    <li>+(001) 91 94 45 61</li>
+                    <li>Send us a message</li>
+                </ul>
+            </div>
+            <div class="foothed" >
+                <ul type="none">
+                    <h4>Our guarantees</h4>
+                    <li>Shipping in 3 days</li>
+                    <li>Free retuns within 14 days</li>
+                    <li>Secure payments</li>
+                </ul>
+            </div>
+            <div class="foothed">
+                <ul type="none">
+                    <h4>Our company </h4>
+                    <li>Delivery</li>
+                    <li>Legal Notice</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Terms and conditions of use</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </section>
+</body>
+
+</html>

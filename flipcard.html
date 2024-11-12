@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> section.flip-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 112px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 77%;
+    height: 145%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    flex-direction: column;
+}
+
+.flip-card-front img {
+    height: 290px;
+    width: 235px;
+    border-radius: 13px;
+    /* background-color: #007bff; */
+    /* background-image: url(image/almir1.jpg); */
+}
+
+/* .flip-card-front { background-image: url(image/sofa1.jfif); }
+.flip-card-front { background-image: url(image/canva1.jfif); }
+.flip-card-front { background-image: url(image/bed1.jpg); } */
+
+.flip-card-back {
+    background-color: #28343a;
+    transform: rotateY(180deg);
+}
+h6 {
+    font-size: 24px;
+}
+</style>
+<body>
+    <section class="flip-body">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/bed5.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <h6>Furniture</h6>
+                    <i>The anthique black bed with lighting in room </i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/sofadevan.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <h6>Sofa</h6>
+                    <i> french style pune sette sofa antique hand carved wood sofa </i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/setcutlere.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <h6>Cutlere</h6>
+                    <i>Antique dinner set with black theme</i>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/framesle.jpg" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <h6>Frame</h6>
+                    <i> Superb Oval Antique Victorian Dried Floral Arrangement In Gold Tone Frame</i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
